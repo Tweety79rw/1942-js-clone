@@ -12,7 +12,7 @@ class Entity {
   }
   Intersects(entity) {
     return !(this.pos.x > entity.pos.x + entity.w
-      || this.pos.x + this.pos.w < entity.pos.x
+      || this.pos.x + this.w < entity.pos.x
       || this.pos.y > entity.pos.y + entity.h
       || this.pos.y + this.h < entity.pos.y);
   }

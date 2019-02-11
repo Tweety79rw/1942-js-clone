@@ -3,8 +3,8 @@ class EnemyManager {
     this.enemies = [];
     this.playerBullets = playerBullets;
   }
-  AddEnemy(enemy) {
-    this.enemies.push(enemy);
+  AddEnemy() {
+    this.enemies.push(new Enemy());
   }
   Update() {
     for(let i = this.enemies.length - 1; i >= 0; i--) {

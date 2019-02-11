@@ -1,6 +1,6 @@
 class Enemy extends Entity {
   constructor() {
-    super(width/2, -10, 40, 40);
+    super(random(width), -10, 40, 40);
     this.remove = false;
     this.vel.y = 2;
     this.health = 3;
